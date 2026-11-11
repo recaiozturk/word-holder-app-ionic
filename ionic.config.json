@@ -1,0 +1,7 @@
+{
+  "name": "word-holder",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
