@@ -1,2 +1,39 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+:root {
+  --wh-ink: #122028;
+  --wh-ink-soft: #24343d;
+  --wh-teal: #0f8f86;
+  --wh-teal-deep: #0b6f68;
+  --wh-teal-soft: #d7f1ee;
+  --wh-sand: #f4f8f7;
+  --wh-mist: #e4eeeb;
+  --wh-line: #d0ddd9;
+  --wh-muted: #5d6f77;
+  --wh-danger: #c94a4a;
+  --wh-danger-soft: #f8e4e4;
+  --wh-surface: #ffffff;
+  --wh-shadow: 0 10px 30px rgba(18, 32, 40, 0.08);
+  --wh-radius-sm: 10px;
+  --wh-radius-md: 16px;
+  --wh-radius-lg: 24px;
+  --wh-space-1: 4px;
+  --wh-space-2: 8px;
+  --wh-space-3: 12px;
+  --wh-space-4: 16px;
+  --wh-space-5: 24px;
+  --wh-space-6: 32px;
+  --wh-font-display: 'Fraunces', Georgia, serif;
+  --wh-font-body: 'Manrope', system-ui, sans-serif;
+
+  --ion-font-family: var(--wh-font-body);
+  --ion-color-primary: #0f8f86;
+  --ion-color-primary-rgb: 15, 143, 134;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #0b6f68;
+  --ion-color-primary-tint: #2a9d95;
+  --ion-background-color: var(--wh-sand);
+  --ion-text-color: var(--wh-ink);
+  --ion-toolbar-background: transparent;
+  --ion-tab-bar-background: rgba(255, 255, 255, 0.92);
+  --ion-safe-area-bottom: env(safe-area-inset-bottom);
+}

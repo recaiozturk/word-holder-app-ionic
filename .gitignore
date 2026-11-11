@@ -1,5 +1,6 @@
 # Angular specific
 /dist/
+/www/
 /out-tsc/
 /tmp/
 /coverage/
@@ -26,3 +27,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Visual Studio
+.vs/

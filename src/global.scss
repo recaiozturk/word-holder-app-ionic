@@ -1,37 +1,70 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
+@use "tailwindcss";
+@use "@ionic/angular/css/core.css";
+@use "@ionic/angular/css/normalize.css";
+@use "@ionic/angular/css/structure.css";
+@use "@ionic/angular/css/typography.css";
+@use "@ionic/angular/css/display.css";
+@use "@ionic/angular/css/padding.css";
+@use "@ionic/angular/css/flex-utils.css";
 
-/* Core CSS required for Ionic components to work properly */
-@import "@ionic/angular/css/core.css";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--wh-font-body);
+  color: var(--wh-ink);
+  background:
+    radial-gradient(circle at top left, rgba(15, 143, 134, 0.12), transparent 36%),
+    radial-gradient(circle at top right, rgba(18, 32, 40, 0.06), transparent 28%),
+    var(--wh-sand);
+}
 
-/* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+ion-content {
+  --background: transparent;
+}
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
+.wh-page {
+  min-height: 100%;
+  padding: var(--wh-space-4);
+  padding-bottom: calc(var(--wh-space-6) + env(safe-area-inset-bottom));
+}
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+.wh-title {
+  font-family: var(--wh-font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--wh-ink);
+}
+
+.wh-subtitle {
+  color: var(--wh-muted);
+  line-height: 1.5;
+}
+
+.wh-card {
+  background: var(--wh-surface);
+  border: 1px solid var(--wh-line);
+  border-radius: var(--wh-radius-md);
+  box-shadow: var(--wh-shadow);
+}
+
+.wh-error {
+  color: var(--wh-danger);
+  font-size: 0.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
